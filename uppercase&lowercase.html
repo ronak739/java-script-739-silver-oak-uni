@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> uppercase&lowercase </title>
+</head>
+<body>
+    <p>convert text to the uppercase.</p>
+    enter your name<input type="text" id="fname" onchange="changetext();"/>
+    <p>convert text to the lowercase.</p>+
+    enter your name<input type="text" id="lname" onchange="lowertext();"/>
+    <script>
+        function changetext()
+        {
+            const x=document.getElementById("fname");
+            x.value = x.value.toUpperCase();  
+        }
+        function lowertext()
+        {
+            const y=document.getElementById("lname");
+            y.value = y.value.toLowerCase();  
+        }
+    </script>
+</body>
+</html>
