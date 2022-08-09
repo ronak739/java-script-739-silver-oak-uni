@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>jQuery Mouse Events</title>
+    <style>
+      .demo {
+        background-color: rgb(247, 213, 120);
+        font-style: italic;
+        font-weight: 700;
+        box-shadow: 0 10px 20px rgb(0, 0, 0),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+		border-radius: 20px;
+      }
+    </style>
+</head>
+<body>
+    <h2>jQuery dblclick Event</h2>
+    <section>
+      <div>
+        <h3>Double Click Functionality </h3>
+        <p>
+          Welcome to the Javascript Double click functionality example.
+        </p>
+		<div id="MyDiv1" style="height:100px;width:100px;background-color:rgb(69, 165, 42);display:none;"></div><br />
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div").dblclick(function () {
+          $(this).addClass("demo");
+		  $("#MyDiv1").fadeIn(1000);
+        });
+      });
+    </script>
+</body>
+</html>
